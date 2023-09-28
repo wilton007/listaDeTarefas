@@ -10,6 +10,7 @@ public class TarefaRequestDTO {
 
     @NotBlank
     private String titulo;
+    private Long usuarioId;
     private String descricao;
     private PrioridadesEnum prioridades;
 

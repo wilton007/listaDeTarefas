@@ -22,12 +22,17 @@ public class Tarefa {
     @Column(name = "descricao", length = 500)
     private String descricao;
     @NotNull
+    @Enumerated(EnumType.STRING)
     private PrioridadesEnum prioridades;
     @NotNull
+    @Enumerated(EnumType.STRING)
     private StatusTarefaEnum status;
     @NotNull
     private LocalDate dataInicio;
     private LocalDateTime dataFim;
+    @ManyToOne
+    @NotNull
+    private Usuario usuario;
 
 
     public void setStatus(StatusTarefaEnum status) {

@@ -13,10 +13,12 @@ import java.util.List;
 public interface TarefaMapper {
 
     TarefaResponseDTO toTarefaResponseDTO(Tarefa tarefa);
-    TarefaResponseDTO toTarefaResponseDTO(TarefaRequestDTOatuaizacao tarefaRequestDTOatuaizacao);
-    TarefaResponseDTOfinalizada toTarefaResponseDTOfinalizada(TarefaRequestDTOatuaizacao tarefaRequestDTOatuaizacao);
+
+    TarefaResponseDTOfinalizada toTarefaResponseDTOfinalizada(Tarefa tarefa);
     List<TarefaResponseDTO> toListTarefaResponseDTO(List<Tarefa> list);
 
     Tarefa toTarefa(TarefaRequestDTO tarefaRequestDTO);
     Tarefa toTarefa(TarefaRequestDTOatuaizacao tarefaRequestDTOatuaizacao);
+
+
 }

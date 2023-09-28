@@ -3,6 +3,7 @@ package com.listaprafazer.todolist.controller;
 import com.listaprafazer.todolist.dto.BaseResponseDTO;
 import com.listaprafazer.todolist.dto.TarefaRequestDTO;
 import com.listaprafazer.todolist.dto.TarefaRequestDTOatuaizacao;
+import com.listaprafazer.todolist.dto.UsuarioRequestDTO;
 import com.listaprafazer.todolist.service.TarefaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,5 +55,4 @@ public class TarefaController {
             return BaseController.err(r.getMessage());
         }
     }
-
 }
